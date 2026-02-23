@@ -1,0 +1,130 @@
+.pm-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.pm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pm-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.pm-table th,
+.pm-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.pm-table th {
+  background: #f1f5f9;
+}
+
+.actions button {
+  margin-right: 6px;
+}
+
+.active {
+  color: green;
+  font-weight: 600;
+}
+
+.inactive {
+  color: red;
+  font-weight: 600;
+}
+
+.btn,
+button {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 420px;
+  border-radius: 8px;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.table-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.no-image {
+  font-size: 12px;
+  color: #999;
+}
+.error-popup {
+  background: #ffecec;
+  color: #b00020;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #b00020;
+}
+
+.field-error {
+  color: #d32f2f;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.input-error {
+  border: 1px solid #d32f2f !important;
+}

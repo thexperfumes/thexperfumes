@@ -1,0 +1,57 @@
+/* prevent any overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* popup container */
+.popup-center {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* image only */
+.popup-image-only {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #fff;
+}
+
+/* close button */
+.popup-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* mobile safety */
+@media (max-width: 480px) {
+  .popup-center {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+}

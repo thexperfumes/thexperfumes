@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+.login-wrapper {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #0c0c0c;
+  border-radius: 14px;
+  padding: 36px 32px;
+  border: 1px solid rgba(250, 204, 21, 0.6);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(250, 204, 21, 0.25);
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #facc15;
+  letter-spacing: 1.2px;
+  margin-bottom: 22px;
+}
+
+/* Error message */
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* Form */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Inputs */
+.login-card input {
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 8px;
+  background: #000;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-card input::placeholder {
+  color: #9ca3af;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #facc15;
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.25);
+}
+
+/* Button */
+.login-card button {
+  height: 48px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #facc15, #eab308);
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.login-card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
+}
+
+.login-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

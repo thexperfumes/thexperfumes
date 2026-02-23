@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <title>perfume-store</title>
+</head>
+
+<body>
+  <div id="root"></div>        <!-- Customer App -->
+    <div id="admin-root"></div> <!-- Admin App -->
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: "#D4AF37",
+            blackbg: "#0B0B0B",
+          },
+        },
+      },
+    }
+  </script>
+</body>
+
+</html>

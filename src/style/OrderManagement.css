@@ -1,0 +1,61 @@
+.report-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.report-filter input {
+  padding: 6px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn.pdf {
+  background: #d32f2f;
+}
+
+.btn.excel {
+  background: #2e7d32;
+}
+
+.btn.csv {
+  background: #1565c0;
+}
+
+.action-cell {
+  display: flex;
+  gap: 6px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+  color: #fff;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+/* ✅ IMPORTANT */
+.order-table thead {
+  display: table-header-group;
+}
+
+.order-table th {
+  background: #1f2937;
+  color: #facc15;
+  font-weight: 600;
+}
