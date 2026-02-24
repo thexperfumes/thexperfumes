@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseAxios = axios.create({
-  baseURL: "http://localhost:8000/api/",
+  baseURL: "https://backend-sxms.onrender.com/api/",
    withCredentials: true, 
   timeout: 10000,
 });

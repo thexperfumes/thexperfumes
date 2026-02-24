@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api", // change if needed
+  baseURL: "https://backend-sxms.onrender.com", // change if needed
 });
 
 /* Send OTP */

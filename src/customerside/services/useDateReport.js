@@ -11,7 +11,7 @@ export default function useDateReport(apiPath) {
     }
 
     window.open(
-      `http://localhost:8000/api/${apiPath}/${type}/?from=${from}&to=${to}`,
+      `https://backend-sxms.onrender.com/api/${apiPath}/${type}/?from=${from}&to=${to}`,
       "_blank"
     );
   };
