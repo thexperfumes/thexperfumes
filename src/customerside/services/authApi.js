@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API =  baseAxios.create();
+const API = axios.create({
+  baseURL: "https://backend-sxms.onrender.com/api/", // change if needed
+});
 
 /* Send OTP */
 export const sendOtp = async (email) => {
