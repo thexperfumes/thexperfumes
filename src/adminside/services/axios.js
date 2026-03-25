@@ -33,7 +33,7 @@
 import axios from "axios";
 
 const adminApi = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  baseURL:"https://backend-sxms.onrender.com/api/",
 });
 
 // Attach token to all requests except login
