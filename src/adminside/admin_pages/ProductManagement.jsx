@@ -261,7 +261,7 @@ export default function ProductManagement() {
                   className="border-t border-gray-800 hover:bg-yellow-400/10 transition"
                 >
                   <td className="p-2">
-                    {p.image_url ? (
+                    {/* {p.image_url ? (
                       <img
                         src={p.image_url}
                         alt={p.name}
@@ -271,7 +271,21 @@ export default function ProductManagement() {
                       <div className="w-16 h-16 bg-gray-800 flex items-center justify-center rounded-md text-gray-500 text-xs">
                         No Image
                       </div>
-                    )}
+                    )} */}
+                    {(p.image_url || p.image) ? (
+  <img
+    src={p.image_url || `https://backend-sxms.onrender.com${p.image}`}
+    alt={p.name}
+    className="w-16 h-16 object-cover rounded-md"
+    onError={(e) => {
+      e.target.style.display = "none";
+    }}
+  />
+) : (
+  <div className="w-16 h-16 bg-gray-800 flex items-center justify-center rounded-md text-gray-500 text-xs">
+    No Image
+  </div>
+)}
                   </td>
 
                   <td className="p-3 font-semibold">{p.name}</td>
